@@ -1,4 +1,7 @@
 
+window.onload = function(){
+
+
     var body = document.body;
     var navLinks = document.querySelectorAll('nav ul li a');
     var animateTime = 900;
@@ -38,3 +41,4 @@
         return yScroll;
     }
 
+};
