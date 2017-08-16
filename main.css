@@ -1,21 +1,31 @@
+
+
 header {
     height:100vh;
-    background: url('./public/images/christopher-gower-291246.jpg') #999999 no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #fefefe;
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: 20% 70%;
+    grid-template-areas:
+            "nav nav nav nav nav"
+            "name name image image image";
+}
+.main-nav {
+    grid-area: nav;
+}
+.header-image {
+    grid-area: image;
+}
+.header-name {
+    grid-area: name;
 }
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 nav li {
-    padding: 1% 5%;
+
 }
 nav a  {
     text-decoration: none;
@@ -48,4 +58,9 @@ nav a:hover {
 section {
     height: 100vh;
     border-bottom: solid 1px red;
+}
+
+/*slow scroll animation*/
+.in-transition{
+    transition: transform 900ms ease;
 }
