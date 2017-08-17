@@ -33,11 +33,11 @@ section {
 /*Intro styles */
 #intro {
   background: linear-gradient(rgba(34, 0, 0, 0.1), rgba(56, 0, 0, 0.1));
-  width: 100%
 }
 #intro .header-name {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
+  margin-top: 3em;
 }
 .header-name h1{
   font-size: 3em;
@@ -49,6 +49,7 @@ section {
 #intro img {
   max-width: 100%;
   height: auto;
+  padding: 3em 0;
 }
 
 
@@ -61,6 +62,53 @@ section {
 #work{
   background-color: #222;
 }
+#work .work-item {
+  width: 100%;
+  height: 25%;
+  color: #efe;
+  transition: box-shadow 0.7s ease-in-out;
+  position: relative;
+}
+#work .work-item:hover {
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.5), 0px -5px 5px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+#work .work-item h3 {
+  font-family: 'Fjalla One', sans-serif;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 1% 2%;
+  font-size: 1.5em;
+  font-size: bold;
+}
+#work .work-item h4 {
+  font-family: 'Cantarell', sans-serif;
+  font-style: italic;
+  font-size: .8em;
+  padding: 1% 2%;
+}
+#work .work-item p {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 1em;
+  padding: 1% 2%;
+}
+#work .stream-search {
+  background: #CA3568;
+  background: -webkit-linear-gradient(to right, #CA3568, #DE0007); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CA3568, #DE0007);
+}
+#work .materialize {
+  background: #009688;
+  background: -webkit-linear-gradient(to right, #009688, #E9C228); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #009688, #E9C228);
+
+}
+#work .johnny-four {
+  background-color: #ffc107;
+}
+#work .spot-ninja {
+  background-color: #FF001C;
+}
+
 /*slow scroll animation*/
 .in-transition{
     transition: transform 900ms ease;
@@ -87,6 +135,19 @@ section {
   }
   #intro img {
     grid-area: image;
+    margin-top: 40%
   }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #intro img {
+    margin-top: 2%;
+  }
+  #intro .header-name {
+    font-size: 1.5em;
+  }
+
+
 
 }
