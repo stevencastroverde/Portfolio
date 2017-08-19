@@ -3,7 +3,25 @@
   padding: 0;
 }
 body {
-  background-color: #eee;
+  background-color: #fefefe;
+  color: #898989;
+}
+section {
+    height: 100vh;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(transparent,#fefefe 95%), url('./public/images/goran-ivos-246271.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(254,254,254,0.9);
 }
 nav ul {
     list-style: none;
@@ -25,19 +43,13 @@ nav a:hover {
     color: transparent;
     border: #000;
 }
-section {
-    height: 100vh;
-    border-bottom: solid 1px red;
-}
-
-/*Intro styles */
-#intro {
-  background: linear-gradient(rgba(34, 0, 0, 0.1), rgba(56, 0, 0, 0.1));
-}
 #intro .header-name {
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
-  margin-top: 3em;
+  padding-top: 50vh;
+}
+.header-name {
+  color: black;
 }
 .header-name h1{
   font-size: 3em;
@@ -46,21 +58,17 @@ section {
 .header-name h2 {
   font-style: italic;
 }
-#intro img {
-  max-width: 100%;
-  height: auto;
-  padding: 3em 0;
-}
+
 
 
 /*About Styles*/
 #about {
-  background-color: #898989;
+  text-align: center;
 }
 
 /*Work Styles*/
 #work{
-  background-color: #222;
+
 }
 #work .work-item {
   width: 100%;
@@ -141,9 +149,6 @@ section {
 }
 
 @media only screen and (min-width: 1000px) {
-  #intro img {
-    margin-top: 2%;
-  }
   #intro .header-name {
     font-size: 1.5em;
   }
