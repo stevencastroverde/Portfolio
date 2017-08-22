@@ -14,7 +14,7 @@ window.onload = function(){
 
     function scrollHelper (event) {
         event.preventDefault();
-        var wantedLocation = document.getElementById(event.target.hash.substr(1)).offsetTop;
+        var wantedLocation = (document.getElementById(event.target.hash.substr(1)).offsetTop) - document.querySelector('nav').clientHeight ;
         var currentPosition = getPageLocation();
 
         body.classList.add('in-transition');
