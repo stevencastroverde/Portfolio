@@ -1,1 +1,4 @@
 /vendor/
+config.json
+/functions/node_modules
+node_modules
